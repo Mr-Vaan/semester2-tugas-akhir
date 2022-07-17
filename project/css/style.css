@@ -1,0 +1,26 @@
+
+.Text-berjalan{
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://source.unsplash.com/2000x800');
+
+    /* Black : #000000 */
+    color: #fff; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Text-berjalan h1{
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.navbar-brand .gede{
+    font: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}

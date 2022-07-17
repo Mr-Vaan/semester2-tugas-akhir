@@ -1,0 +1,63 @@
+<div class="mb-3">
+    <label for="kd_distributor">Distributor</label>
+        <select class="form-control" name="kd_distributor" id="kd_distributor">
+            <option selected disabled>-- Pilih Distributor -- </option>
+            <?php foreach ($data_distributor as $row) :; ?>
+                <option value="<?= $row['kd_distributor']; ?>"><?= $row['nm_distributor']; ?></option>
+            <?php endforeach;; ?>
+        </select>
+</div>
+
+================================================ Form barang masuk ==========================
+<div class="mb-3">
+    <label class="form-label">Produk</label>
+        <input type="text" name="nm_barang" class="form-control" placeholder="Masukkan Nama Produk"
+            value="<?php echo $barang['nm_barang'] ?>">
+</div>
+
+<div class="mb-3">
+            <label for="distributor">Distributor</label>
+            <select class="form-control" name="nm_barang" id="nm_barang">
+                <option selected disabled>Default</option>
+                <?php foreach ($data_barang as $row) :; ?>
+                <option value="<?= $row['kd_barang']; ?>"
+                    <?= $row['kd_barang'] == $barang['nm_barang'] ? "selected" : ""; ?>>
+                    <?= $row['nm_barang']; ?></option>
+                <?php endforeach;; ?>
+            </select>
+        </div>
+
+============================================ DATA BARANG MASUK ======================
+ <a href="data_barang.php?edit=update&&id="
+                                    class="btn btn-warning btn-sm">
+                                    <i class="fa fa-edit" aria-hidden="true"></i>Edit
+                                </a>
+                                <a href="../../proses/proses_barang_masuk.php?hapus=hapus&&id=<?= $data['kd_barang']; ?>"
+                                    class="btn btn-danger btn-sm">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>Hapus
+                                </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
